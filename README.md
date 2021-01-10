@@ -16,7 +16,7 @@ For more details, contact me at:
 ![](images/IMG_20201231_185934.jpg)
 
 ## Overview
--------
+
 The board was inspired by [this project](https://olegkutkov.me/2018/02/14/isolated-eqmod-adapter-telescope-control/).
 
 The board uses an FT232RL IC for the serial to USB conversion, and AdUM1201AR for the isolation.
@@ -29,8 +29,8 @@ The board can also be used, thanks to an optional AdUM1200AR, as a generic isola
 
 This, together with the broken out connector, can allow the board to be used, for example, with an Arduino or an ESP32 board, were full isolation is needed.
 
+
 ## Using with an HEQ5/EQ6
--------------------
 
 Please refer to [this page](http://eq-mod.sourceforge.net/eqdirect2.htm) for connection details.
 You want to connect the Tx pin on the board to the Rx pin on the mount, and the Rx pin on the board to the Tx pin on the mount.
@@ -38,7 +38,7 @@ You want to connect the Tx pin on the board to the Rx pin on the mount, and the 
 Once you have connected Tx, Rx, GND and 12V from the mount to the board, and a USB cable from your PC to the board, it should all just works. The PC should remember the COM port (i.e. COM port number shouldn't change), and Windows 10 should download the appropriate drivers automatically.
 
 ## Schematics
--------------------
+
 
 ![](images/Schematics.png)
 The schematics of the board is composed of two parts, separated by the isolator chips.
@@ -54,14 +54,14 @@ The idea here is to use the board in a few possible ways:
 There are also 4 indicator LEDs. Two of them indicate if power if present on either side of the board (USB power and 5V or 12V connection on the UART side). The other 2 LEDs are connected to CBUS0 and CBUS1 on the FT232RL IC. Those line normally indicate activity on the Tx and Rx line.
 
 ## PCB Images
--------------------
+
 ![](images/EQMOD_DIRECT_Isolated_bottom.png)
 
 ![](images/EQMOD_DIRECT_Isolated_top.png)
 
 ![](images/IMG_20201231_190129.jpg)
 ## Make your own board
--------------------
+
 You can use the following gerber, bom and assembly files to order yourself from JLC PCB:
 
 [gerber-jlc.zip](gerber/gerber-jlc.zip)
@@ -87,11 +87,11 @@ For a very dim, night use, astronomy friendly LEDs, try 100k instead.
 Finally, you can both solder the USB and UART connectors, or solder wires directly to the board. There are slots cut into the PCB, if you want to solder wire directly, to add some strain relief using some zip ties.
 
 ## Testing the board
---------------
+
 If you want to make sure your board works as expected, and works in many many different scenarios, I've written a simple script to stress test the device.
 Check it out [here](https://github.com/claudioarena/Serial_stress_test).
 
 Simply short out the Tx and Rx line on the board (so that messages sent from the board are received back), and power the UART side of the board from an external supply (either 12V or 5V connection).
 
-The python script will run through a combinations of different serial BAUD rates, and check with various lengths of random strings to see if the received messages match the outgoing ones.
+The python script will run through a combinations of different serial Baud rates, and check with various lengths of random strings to see if the received messages match the outgoing ones.
 
