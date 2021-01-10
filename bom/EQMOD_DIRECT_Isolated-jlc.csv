@@ -1,0 +1,16 @@
+Comment,Designator,Footprint,LCSC Part #
+"100 nF Unpolarized capacitor, small symbol","C3,C2,C8,C1,C10,C9,C6,C5",C_0603_1608Metric_Pad1.05x0.95mm_HandSolder,C14663
+"4.7 uF Polarized capacitor, small symbol","C4,C11",C_1206_3216Metric_Pad1.42x1.75mm_HandSolder,C29823
+"4.7 uF Unpolarized capacitor, small symbol",C7,C_1206_3216Metric_Pad1.42x1.75mm_HandSolder,C29823
+"LED_P_A Light emitting diode, small symbol",D1,LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder,C2286
+"LED_P_B Light emitting diode, small symbol",D2,LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder,C2286
+"LED_Rx Light emitting diode, small symbol",D3,LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder,C2286
+"LED_Tx Light emitting diode, small symbol",D4,LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder,C2286
+"3.3k Resistor, small symbol","R2,R1,R4,R3",R_0603_1608Metric_Pad1.05x0.95mm_HandSolder,C22978
+"10k Resistor, small symbol",R5,R_0603_1608Metric_Pad1.05x0.95mm_HandSolder,C25804
+"200 Resistor, small symbol","R8,R6,R9,R7",R_0603_1608Metric_Pad1.05x0.95mm_HandSolder,C8218
+"USBLC6-2SC6 Very low capacitance ESD protection diode, 2 data-line, SOT-23-6",U1,SOT-23-6,C7519
+"FT232RL USB to Serial Interface, SSOP-28",U2,SSOP-28_5.3x10.2mm_P0.65mm,C8690
+"ADuM1201AR Dual-channel digital isolator, bidirectional communication, 3V/5V level translation, SOIC-8",U3,SOIC-8_3.9x4.9mm_P1.27mm,C9669
+"NUP4202 Transient voltage suppressor designed to protect high speed data lines from ESD, EFT, and lightning",U5,SOT-363_SC-70-6,C252434
+"HT7550-1-SOT89 100mA Low Dropout Voltage Regulator, Fixed Output, SOT89",U6,SOT-89-3,C16106

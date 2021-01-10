@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name EQMOD_DIRECT_Isolated-rescue)(type Legacy)(uri ${KIPRJMOD}/EQMOD_DIRECT_Isolated-rescue.lib)(options "")(descr ""))
+)
